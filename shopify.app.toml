@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "ea336c3d567e215504d828bc1a8cbee9"
+name = "admin-vaulted-payment-methods"
+handle = "admin-vaulted-payment-methods"
+application_url = "https://shopify.dev/apps/default-app-home"
+embedded = true
+
+[build]
+dev_store_url = "plus-partner-test.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_customers,write_customers"
+
+[auth]
+redirect_urls = [ "https://shopify.dev/apps/default-app-home/api/auth" ]
+
+[webhooks]
+api_version = "2025-01"
+
+[pos]
+embedded = false
