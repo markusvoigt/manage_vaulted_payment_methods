@@ -51,7 +51,7 @@ function App() {
         {paymentMethods.length ?  (
           <>
           <Box paddingBlockEnd="large">
-          <Text fontWeight="bold">Payment methods on file.</Text>
+          <Text fontWeight="bold">Payment methods on file:</Text>
         </Box>
           {paymentMethods.map(
               ({ id, instrument }, index) => {
@@ -80,7 +80,7 @@ function App() {
                         inlineSize="100%"
                         gap="large"
                       >
-                        <Box inlineSize="53%">
+                        <Box inlineSize="60%">
                           <Box inlineSize="100%">
                             <Text fontWeight="bold" textOverflow="ellipsis">{type()}</Text>
                           </Box>
@@ -89,7 +89,7 @@ function App() {
                             <Text textOverflow="ellipsis">{details()}</Text>
                           </Box>
                         </Box>
-                        <Box inlineSize="22%">
+                        <Box inlineSize="25%">
                         <Box inlineSize="100%">
                             <Text fontWeight="bold" textOverflow="ellipsis">Expires:</Text>
                             <Box inlineSize="100%">
@@ -97,13 +97,14 @@ function App() {
                           </Box>
                           </Box>
                         </Box>
-                        <Box inlineSize="25%">
+                        <Box inlineSize="15%">
                             <Button
                               onPress={() => handleRevoke(id)}
-                              variant="tertiary"
+                              variant="plain"
+                              tone="critical"
                               disabled={!instrument.isRevocable}
                             >
-                              <Icon name="DeleteMinor" />
+                              Revoke
                             </Button>
                         </Box>
                       </InlineStack>
