@@ -32,7 +32,6 @@ function App() {
       setLoading(false);
       if (paymentMethods?.data?.customer?.paymentMethods?.edges) {
         setPaymentMethods(paymentMethods?.data?.customer?.paymentMethods?.edges.map((node)=>node.node));
-        console.dir(paymentMethods?.data?.customer?.paymentMethods?.edges.map((node)=>node.node));
       }
     })();
   }, [customerID]);

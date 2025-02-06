@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "ea336c3d567e215504d828bc1a8cbee9"
-name = "admin-vaulted-payment-methods"
+name = "Vaulted Payment Methods"
 handle = "admin-vaulted-payment-methods"
 application_url = "https://shopify.dev/apps/default-app-home"
 embedded = true
